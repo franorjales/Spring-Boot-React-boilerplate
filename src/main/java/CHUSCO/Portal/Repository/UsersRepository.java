@@ -1,5 +1,10 @@
 package CHUSCO.Portal.Repository;
 
-public class UsersRepository {
+import CHUSCO.Portal.Model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UsersRepository extends JpaRepository<User, Long>{
 
 }

@@ -18,7 +18,7 @@ public class User implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idUser;
+	private Long idUser;
 	
 	@NotBlank
 	private String userName;
@@ -45,14 +45,14 @@ public class User implements Serializable{
 	/**
 	 * @return the idUser
 	 */
-	public int getIdUser() {
+	public Long getIdUser() {
 		return idUser;
 	}
 
 	/**
 	 * @param idUser the idUser to set
 	 */
-	public void setIdUser(int idUser) {
+	public void setIdUser(Long idUser) {
 		this.idUser = idUser;
 	}
 
